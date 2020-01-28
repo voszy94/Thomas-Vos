@@ -1,83 +1,121 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="nl">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Icelandair</title>
 </head>
 
 <body>
     <header>
+        <!--Navigatie-->
         <nav>
             <ul>
-                <li><img class="logokleur" src="./_IMG/logo.svg" alt="Logo Icelandair"></li>
-                <li><img class="hamburger" src="./_IMG/Hamburgesa.svg" alt="Hamburger menu"></li>
+                <li><img class="logokleur" src="./img/logo.svg" alt="Logo Icelandair"></li>
+                <li><img class="hamburger" src="./img/Hamburgesa.svg" alt="Hamburger menu"></li>
+            </ul>
+
+            <!--Navigatie breedt-->
+            <ul class="menu">
+                <li>Vluchten</li>
+                <li>Pakketreizen</li>
+                <li>Klantenservice</li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <form class="form1">
+        <!--Vlucht zoeken-->
+        <form>
             <h1 class="blauw"> Boek uw volgende avontuur</h1>
-            <input class="boxes" type="text" name="van">
-            <input class="boxes2" type="text" name="naar">
+            <label>van
+                <input class="boxes" type="text" name="van">
+            </label>
+            <label>naar
+                <input class="boxes2" type="text" name="naar">
+            </label>
         </form>
+
+        <!--Sub navigatie-->
         <section class="sec1">
-            <div class="boeken">
-                <img class="icoon" src="./_IMG/Icons/plane.svg" alt="vliegtuig icoon">
+            <figure class="boeken">
+                <img class="icoon" src="./img/Icons/plane.svg" alt="vliegtuig icoon">
+                <img class="icoon2" src="./img/Icons/plane2.svg" alt="vliegtuig icoon">
                 <h2>Vlucht boeken</h2>
-            </div>
-            <div class="aanbieding">
-                <img class="icoon" src="./_IMG/Icons/hanger%20(1).svg" alt="Aanbieding icoon">
+            </figure>
+            <figure class="aanbieding">
+                <img class="icoon" src="./img/Icons/hanger%20(1).svg" alt="Aanbieding icoon">
                 <h2>Aanbiedingen</h2>
-            </div>
-            <div class="inchecken">
-                <img class="icoon" src="./_IMG/Icons/ticket%20(1).svg" alt="hanger icoon">
+            </figure>
+            <figure class="inchecken">
+                <img class="icoon" src="./img/Icons/ticket%20(1).svg" alt="hanger icoon">
                 <h2>Inchecken</h2>
-            </div>
-            <div class="boekingen">
-                <img class="icoon" src="./_IMG/Icons/locatie%20(1).svg" alt="locatie icoon">
+            </figure>
+            <figure class="boekingen">
+                <img class="icoon" src="./img/Icons/locatie%20(1).svg" alt="locatie icoon">
                 <h2>Mijn boeking</h2>
-            </div>
+            </figure>
         </section>
-        <article>
-            <img class="images" src="./_IMG/kerstboom.jpg" alt="Kertplaatje">
-            <h1>Icelandair-cadeaubon</h1>
-            <p> Inspireer iemand om die droomreis te maken</p>
-            <button type="button">Koop cadeaubon</button>
-        </article>
-        <article>
-            <img class="images" src="./_IMG/CO2.png" alt="CO2 plaatje">
-            <h1>Compenseer uw CO2-uitstoot</h1>
-            <p> We realiseren ons dat er een duurzaam bedrijfsmodel nodig is om de milieugevolgen van wat we doen op de lange termijn te verminderen.</p>
-            <button type="button">Lees meer</button>
-        </article>
-        <article>
-            <img class="images" src="./_IMG/Saga.jpg" alt="Saga plaatje">
-            <h1>Icelandair Saga Club</h1>
-            <p> Word lid van de Icelandair Saga Club en verdien Saga Points met uw vluchten. Gebruik ze aan boord of bijna overal ter wereld!</p>
-            <button type="button">Word lid van Saga Club</button>
-        </article>
-        <article>
-            <img class="images" src="./_IMG/gijser.jpg" alt="stopover plaatje">
-            <h1>Icelandair Stopover</h1>
-            <p> Al sinds de jaren ´60 , moedigt Icelandair haar passagiers aan om het beste uit hun reis te halen door gebruik te maken van de Icelandair Stopover.</p>
-            <button type="button">Stopover in Ijsland!</button>
-        </article>
+
+        <!--Artikelen-->
+        <section class="artikelen">
+            <article>
+                <figure>
+                    <img class="images" src="./img/kerstboom.jpg" alt="Kertplaatje">
+                </figure>
+                <figure>
+                    <h1>Icelandaircadeaubon</h1>
+                    <p> Inspireer iemand om die droomreis te maken</p>
+                    <button type="button">Koop cadeaubon</button>
+                </figure>
+            </article>
+            <a href="detail.html"><article>
+                <figure><img class="images" src="./img/CO2.png" alt="CO2 plaatje">
+                </figure>
+                <figure>
+                    <h1>Compenseer uw CO2-uitstoot</h1>
+                    <p> We realiseren ons dat er een duurzaam bedrijfsmodel nodig is om de milieugevolgen van wat we doen op de lange termijn te verminderen.</p>
+                    <button type="button">Lees meer</button>
+                </figure>
+            </article>
+            </a>
+            <article>
+                <figure>
+                    <img class="images" src="./img/Saga.jpg" alt="Saga plaatje">
+                </figure>
+                <figure>
+                    <h1>Icelandair Saga Club</h1>
+                    <p> Word lid van de Icelandair Saga Club en verdien Saga Points met uw vluchten. Gebruik ze aan boord of bijna overal ter wereld!</p>
+                    <button type="button">Word lid van Saga Club</button>
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <img class="images" src="./img/gijser.jpg" alt="stopover plaatje">
+                </figure>
+                <figure>
+                    <h1>Icelandair Stopover</h1>
+                    <p> Al sinds de jaren ´60 , moedigt Icelandair haar passagiers aan om het beste uit hun reis te halen door gebruik te maken van de Icelandair Stopover.</p>
+                    <button type="button">Stopover in Ijsland!</button>
+                </figure>
+            </article>
+        </section>
     </main>
+
+   <!--Footer-->
     <footer>
-        <img class="logozw" src="./_IMG/logo%20ZW.svg" alt="Logo Icelandair ZW">
+        <img class="logozw" src="./img/logo%20ZW.svg" alt="Logo Icelandair ZW">
         <section>
             <h2>Welkom bij Icelandair.com</h2>
-            <ul>
-
-            </ul>
         </section>
-        <p>
-            ©1999-2019 Icelandair. Alle rechten voorbehouden. - Icelandair - Luchthaven Reykjavik - 101 Reykjavik
+        <p>©1999-2019 Icelandair. Alle rechten voorbehouden. - Icelandair - Luchthaven Reykjavik - 101 Reykjavik
         </p>
     </footer>
-</body>
 
+    <!--Link Javascript-->
+    <script src="js/script.js"></script>
+</body>
 </html>
